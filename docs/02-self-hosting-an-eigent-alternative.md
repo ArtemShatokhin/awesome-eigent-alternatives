@@ -33,7 +33,7 @@ Every instance updates itself automatically. The docs pin an exact version with 
 
 ## What runs on the stack and what does not
 
-Kortix runs as one Docker Compose stack: the frontend, the API, the LLM gateway, and the Supabase distribution. Agent sessions run on a separate sandbox provider, not on this stack. The default provider is Daytona, and Platinum and E2B are also supported ([Self-hosting docs](https://kortix.com/docs/host)). The stack stores its data as directories under `~/.config/kortix/self-host/<instance>/`: `volumes/db/data` holds the Postgres database and `volumes/storage` holds file storage.
+Kortix runs as one Docker Compose stack: the frontend, the API, the LLM gateway, and the Supabase distribution. Agent sessions run on a separate sandbox provider, not on this stack. Platinum is the default provider, and Daytona remains available as a legacy fallback ([Self-hosting docs](https://kortix.com/docs/host)). The stack stores its data as directories under `~/.config/kortix/self-host/<instance>/`: `volumes/db/data` holds the Postgres database and `volumes/storage` holds file storage.
 
 ## How Eigent self-hosts
 
